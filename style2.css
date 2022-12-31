@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: burlywood;
+}
+
+header {
+    background-color: rgba(34, 104, 145, 0.288);
+    height: 60px;
+    color: rgb(155, 189, 81);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    visibility: hidden;
+}
+
+header:hover img {
+    visibility: visible;
+    transition: 0.6s;
+    transform: translateX(16vw);
+}
+
+header h1 {
+    font-size: 25px;
+    font-weight: 200;
+    user-select: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+header button {
+    padding: 9px 25px;
+    font-size: 16px;
+    background-color: rgb(184, 37, 49);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header button:hover {
+    color: rgb(57, 159, 182);
+    background-color: black;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 10px;
+    margin: 20px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 64, 107);
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-radius: 4px;
+    box-shadow: 5px 5px 25px gray;
+    transition: 0.1s ease-out;
+}
+
+.card:hover {
+    background-color:rgb(23, 198, 211);
+    color:red;
+    transform: scale(1.1);
+}
+
+.card .profile-image img {
+    border-radius: 50%;
+}
+
+.card .card-content {
+    text-align: center;
+}
+
+.card .card-content h3 {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.card .card-content h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
